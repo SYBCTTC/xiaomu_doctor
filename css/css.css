@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 去掉所有ul，ol的小圆点 */
+ul, ol{
+  list-style: none;
+}
+/* 去掉所有a标签的下划线 */
+a {
+  text-decoration: none;
+}
+/* 使用继承性，给body标签设置字体 */
+body{
+  font: normal 14px/25px '微软雅黑';
+}
+header{
+
+}
+header .header-top{
+  width: 1200px;
+  margin: 0 auto;
+  /* 清除浮动 */
+  overflow: hidden;
+}
+header .header-top .logo{
+  padding-top: 27px;
+  width: 192px;
+  height: 63px;
+  float: left;
+}
+header .header-top .logo h1{
+  width: 192px;
+  height: 63px;
+}
+header .header-top .tool{
+  float: right;
+  width: 266;
+  height: 77px;
+  padding-top: 22px;
+}
+header .header-top .tool .r1{
+  margin-bottom: 14px;
+}
+header .header-top .tool .r1 .tel{
+  width: 32px;
+  height: 25px;
+}
+header .header-top .tool .r1 .telnumber{
+  font-size: 20px;
+  color: #00978E;
+  display: inline-block;
+  width: 158px;
+  height: 26px;
+  text-align: center;
+}
+header .header-top .tool .r1 .icon{
+  width: 24px;
+  height: 24px;
+}
+header .header-top .tool .r1 .chinese-icon{
+  margin-right: 19px;
+}
+header .header-top .tool .r2{
+  width: 264px;
+  height: 28px;
+  border: 1px solid rgba(202, 202, 202, .6);
+}
+header .header-top .tool .r2 input{
+  float: left;
+  width: 224px;
+  height: 28px;
+  /* 去掉边框线 */
+  border: none;
+  padding-left: 20px;
+  /* 去掉鼠标点击时候的外围线 */
+  outline: none;
+}
+header .header-top .tool .r2 button{
+  float: right;
+  width: 20px;
+  height: 20px;
+  /* 去掉背景颜色 */
+  background: none;
+  /* 去掉边框 */
+  border: none;
+  /* 去掉鼠标点击时候的蓝色框 */
+  outline: none;
+  /* 设置触碰时候的鼠标指针样式 */
+  cursor: pointer;
+  /* 微调位置 */
+  position: relative;
+  top: 4px;
+  right: 4px;
+}
+
+header .main-nav{
+  /* 不用写宽度，这样就会自动撑满 */
+  height: 60px;
+  background-color: #00978E;
+  margin-top: 20px;
+}
+header .main-nav ul{
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+header .main-nav ul li{
+  float: left;
+  width: 150px;
+  text-align: center;
+  line-height: 60px;
+}
+header .main-nav ul li.current {
+  background-color: #015e58;
+}
+header .main-nav ul li a{
+  /* 转换为行内块元素 */
+  display: inline-block;
+  /* 转换为块元素 */
+  /* display: block; */
+  width: 150px;
+  height: 60px;
+  font-size: 16px;
+  color: white;
+}
+header .main-nav ul li a:hover{
+  background-color: orange;
+}
+
+section.banner{
+  height: 570px;
+  margin: 0 auto;
+  position: relative;
+}
+section.banner img{
+  width: 100%;
+}
+section.banner h2{
+  position: absolute;
+  width: 480px;
+  height: 79px;
+  top: 100px;
+  left: 400px;
+  font: normal 60px/79px Helvetica;
+  color: #015E58;
+}
+
+
+
